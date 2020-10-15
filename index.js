@@ -26,13 +26,13 @@ const client = new MongoClient(uri, {
 });
 
 client.connect((err) => {
- //========================= ALL COLLECTION ======================================
+ //================================== ALL COLLECTION ======================================
   const serviceCollection = client.db('dbCreativeAgency').collection('services');
   const feedbackCollection = client.db('dbCreativeAgency').collection('clientsFeedback');
   const registrationCollection = client.db('dbCreativeAgency').collection('registration');
   const adminCollection = client.db('dbCreativeAgency').collection('admin');
 
-  //========================= ADD SERVICE REGISTRATION (CREATE) ======================================
+  //========================= ADD SERVICE REGISTRATION (CREATE) ============================
   app.post('/addRegistration', (req, res) => {
     const newRegistration = req.body;
     registrationCollection.insertOne(newRegistration).then((result) => {
