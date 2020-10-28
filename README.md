@@ -29,7 +29,6 @@ Note: Only admin user have ability to view admin dashboard.
 - React Spinners
 - React Spring
 - React Alice Carousel
-<!-- - React Slick -->
 - Bootstrap
 - CSS3
 - FontAwesome
